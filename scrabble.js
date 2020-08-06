@@ -67,7 +67,7 @@ function handleSumaButton2 () {
     console.log(suma2);
     var messageArea2 = document.getElementById("messageArea2");
     messageArea2.innerHTML = "RESULTADO:  " + suma2;
-    startTimer();
+    /*startTimer();*/
 }
 function lanzadera () {
     init();
@@ -85,16 +85,13 @@ var timer;
 function startTimer () {
     timer = setInterval(ticker, 1000);
     var tick = 0;
-        function ticker () {
-            console.log(tick);
-            var reloj = document.getElementById("reloj");
-            reloj.innerHTML = tick;
-            tick++;
-            
-        }
- 
-}
-
+    function ticker () {
+        console.log(tick);
+        var reloj = document.getElementById("reloj");
+        reloj.innerHTML = tick;
+        tick++;
+    }
+};
 function stopTimer() {
     clearInterval(timer);
-    }
+};
