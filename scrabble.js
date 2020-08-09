@@ -40,6 +40,8 @@ function handleSumaButton () {
     
     var messageArea = document.getElementById("messageArea");
     messageArea.innerHTML = "RESULTADO:  " + suma;
+    stopTimer ();
+    startTimer();
   }
 
 let suma2 = 0
@@ -67,7 +69,8 @@ function handleSumaButton2 () {
     console.log(suma2);
     var messageArea2 = document.getElementById("messageArea2");
     messageArea2.innerHTML = "RESULTADO:  " + suma2;
-    /*startTimer();*/
+    stopTimer();
+    startTimer()
 }
 function lanzadera () {
     init();
@@ -95,3 +98,16 @@ function startTimer () {
 function stopTimer() {
     clearInterval(timer);
 };
+function finalizar () {
+    if (suma>suma2) {
+        var finalMessage = document.getElementById("finalMessage");
+        finalMessage.innerHTML = "GANO EL PRIMER JUGADOR";
+    } else if (suma < suma2) {
+        var finalMessage = document.getElementById("finalMessage");
+        finalMessage.innerHTML = "GANO EL SEGUNDO JUGADOR";
+    } else {
+        var finalMessage = document.getElementById("finalMessage");
+        finalMessage.innerHTML = "EST ES UN DE ESAS RARAS OPORTUNIDADES EN LAS QUE HUBO UN EMPATE";
+    }
+    stopTimer ();
+}
