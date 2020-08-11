@@ -107,7 +107,7 @@ function finalizar () {
         finalMessage.innerHTML = "GANO EL SEGUNDO JUGADOR";
     } else {
         var finalMessage = document.getElementById("finalMessage");
-        finalMessage.innerHTML = "EST ES UN DE ESAS RARAS OPORTUNIDADES EN LAS QUE HUBO UN EMPATE";
+        finalMessage.innerHTML = "HUBO UN EMPATE";
     }
     stopTimer ();
 }

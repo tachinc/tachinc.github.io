@@ -12,25 +12,32 @@
         <h1>TANTEADOR SCRABBLE</h1>
     </header>
     <nav>
-        <div class="navContainer1">
+        <div class="navCont">
+
+            <div class="navContainer1">
             <a href="./mododeuso.html" target="_blank">MODE DE USO</a>
             <a href="http://www.redeletras.com/rules/reglamento2007/reglamento2007.pdf" target="_blank">REGLAS</a>
             <a href="https://dle.rae.es/" target="_blank">DICCIONARIO</a>
 
         <!-- <input type="text" placeholder="Palabra" id='buscador'>
         <button id='#botonBuscar' type='button'>Buscar en RAE</button> -->
+            </div>
         </div>
-        <div class="navContainer1">
-            <button type="submit"  onClick="refreshPage()">REINICIAR</button>
+        <div class="navCont2">
+            <div class="navContainer1">
+                <button type="submit"  onClick="refreshPage()">REINICIAR</button>
+            </div>
+            <div class="navContainer1">
+                <button type="submit"  onClick="finalizar()">FINALIZAR</button>
+            </div>
+            <div class="navContainer">
+                <h3 id="reloj"></h3>
+                <button type="submit"  class="stasto" onClick="startTimer()">START</button>
+                <button type="submit"  class="stasto" onClick="stopTimer()">STOP</button>
+            </div>
+
         </div>
-        <div class="navContainer1">
-            <button type="submit"  onClick="finalizar()">FINALIZAR</button>
-        </div>
-        <div class="navContainer">
-            <h3 id="reloj"></h3>
-            <button type="submit"  class="stasto" onClick="startTimer()">START</button>
-            <button type="submit"  class="stasto" onClick="stopTimer()">STOP</button>
-        </div>
+        
    
     </nav>
     <main>
