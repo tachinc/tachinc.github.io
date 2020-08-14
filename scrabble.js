@@ -94,9 +94,13 @@ function startTimer () {
         reloj.innerHTML = tick;
         tick++;
     }
+    let start = document.querySelector('button.startt');
+    start.disabled = true;
 };
 function stopTimer() {
     clearInterval(timer);
+    let start = document.querySelector('button.startt');
+    start.disabled = false;
 };
 function finalizar () {
     if (suma>suma2) {
