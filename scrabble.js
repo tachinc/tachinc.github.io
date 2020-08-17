@@ -64,6 +64,9 @@ function handleSumaButton2 () {
     console.log(puntosASumar2);
  
     let puntosASumarEnNumero2 = parseInt(puntosASumar2, 10);
+    if (isNaN(puntosASumarEnNumero2)) {
+        
+    }
     console.log(puntosASumarEnNumero2);
     suma2 = suma2 + puntosASumarEnNumero2;
     console.log(suma2);
